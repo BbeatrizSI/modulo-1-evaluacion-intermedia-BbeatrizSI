@@ -1,3 +1,84 @@
+:root {
+  /* COLORS */
+  --menu-color: #4a4a4a;
+  --background-color: #3cdbc0;
+  --maintext-color: #ffffff;
+}
+
 * {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+a:link {
+  color: var(--menu-color);
+}
+a:visited {
+  color: var(--menu-color);
+}
+a:active {
+  color: var(--menu-color);
+}
+a:hover {
+  color: var(--menu-color);
+}
+
+/* HEADER */
+.header {
+  background-color: var(--maintext-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 155px;
+}
+.menu span {
+  font-size: 16px;
+  color: var(--menu-color);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu {
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+/* MAIN */
+
+.main {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text span {
+  color: var(--maintext-color);
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .text span {
+    font-size: 40px;
+  }
 }
