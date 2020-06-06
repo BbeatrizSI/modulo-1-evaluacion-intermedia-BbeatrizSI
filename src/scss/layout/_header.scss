@@ -1,5 +1,50 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  background-color: $maintext-color;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+  }
+
+  .logo-container {
+    margin-top: 10px;
+    @media all and (min-width: 768px) {
+      margin-top: 0px;
+    }
+    .logo {
+      display: block;
+      margin: auto;
+      width: 155px;
+    }
+  }
+}
+
+.menu {
+  margin-top: 10px;
+  margin-bottom: 13px;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: $menu-color;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    li {
+      text-transform: uppercase;
+
+      a {
+        padding: 10px;
+      }
+    }
+  }
 }
