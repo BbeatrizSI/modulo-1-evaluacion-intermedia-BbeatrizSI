@@ -1,5 +1,5 @@
 .header {
-  background-color: $maintext-color;
+  background-color: $color-maintext;
   position: fixed;
   width: 100%;
   text-align: center;
@@ -34,8 +34,8 @@
   &-container {
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    color: $menu-color;
+    font-size: $font-size-menu;
+    color: $color-menu;
     margin-left: 10px;
     margin-right: 10px;
 

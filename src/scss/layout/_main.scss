@@ -1,19 +1,19 @@
 .main {
-  background-color: $background-color;
+  background-color: $color-background;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   h1 {
-    color: $maintext-color;
-    font-size: 30px;
+    color: $color-maintext;
+    font-size: $font-size;
     text-transform: capitalize;
     display: block;
     text-align: center;
     font-weight: bold;
     @media all and (min-width: 768px) {
-      font-size: 40px;
+      font-size: $font-size-tablet;
     }
   }
 }
